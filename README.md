@@ -129,7 +129,7 @@ plot_width_in  <- 10
 plot_height_in <- 6.5
 plot_dpi       <- 300
 ```
-## References
+
 
 ## References
 
@@ -138,11 +138,13 @@ plot_dpi       <- 300
 - Gamon et al. (2016). *Proceedings of the National Academy of Sciences*. https://doi.org/10.1073/pnas.1606162113  
 - Gaudel et al. (2017). *ISPRS Archives*. https://doi.org/10.5194/isprs-archives-xlii-1-w1-447-2017  
 - Holling & Meffe (1996). *Conservation Biology*. https://www.jstor.org/stable/2386849  
-- Ingrisch & Bahn (2018). *Trends in Ecology & Evolution*. https://doi.org/10.1016/j.tree.2018.01.013  
+- Ingrisch & Bahn (2018). *Trends in Ecology & Evolution*. https://doi.org/10.1016/j.tree.2018.01.013
+- Koch et al. (2024).*EnviDat*.  https://www.doi.org/10.16904/envidat.511.
 - Koch et al. (2025). *Remote Sensing*. https://doi.org/10.3390/rs17122094  
 - Lloret et al. (2011). *Oikos*. https://doi.org/10.1111/j.1600-0706.2011.19372.x  
 - Senf et al. (2021). *Global Ecology and Biogeography*. https://doi.org/10.1111/geb.13406    
-- Sturm et al. (2022). *Global Change Biology*. https://doi.org/10.1111/gcb.16136  
+- Sturm et al. (2022). *Global Change Biology*. https://doi.org/10.1111/gcb.16136
+- Sturm et al. (2025). *Agricultural and Forest Meteorology*.https://doi.org/10.1111/gcb.16136](https://doi.org/10.1016/j.agrformet.2025.110756
 - Trotto et al. (2025). *Ecological Indicators*. https://doi.org/10.1016/j.ecolind.2025.114382
 
 
