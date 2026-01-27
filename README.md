@@ -37,6 +37,14 @@ date_windows = [
 ]
 
 output_vars = ["CCI", "NIR", "GRN", "SW1"]
+
+# ----------------------------
+# Tile selection find gpkg in repository so you can better identify tile locations
+# ----------------------------
+# Set to None to process all tiles
+# Or provide a list like ["X1234_Y5678", "X2345_Y6789"]
+selected_tiles: list[str] | None = None
+
 ```
 ## Step 3 Extract NFI data
 Go to Script 2 and download grid .gpkg from this repository  set set desired paths on local machine for NFI data, desired indices to extract, and  were you want csv containing indices to output (if you have already matched your nfi data to gpkg you can comment this part out)
