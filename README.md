@@ -9,9 +9,7 @@ This repository contains a flexible  Python-based workflow to generate composite
 ## Requirements
 - Anaconda or Miniconda
 - Git
-- Python set up of your choice
-
-Python and all required libraries are installed via the conda environment.
+- Python and all required libraries are installed via the conda environment.
 
 ---
 
