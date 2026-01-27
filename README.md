@@ -18,5 +18,20 @@ conda env create -f force_mo_environment.yml
 
 conda activate force_mo_environment
 
-## 1) Create the conda environment
+## 2) Mosaicing images
+Mosaic local FORCE time series products for selected years, date windows, and variables.
+
+```python
+from pathlib import Path
+
+in_root = Path(r"M:\FORCE_Sentinel_2_TSA_2017_2023\level3\tsa\real_values_flagged")
+out_root = Path(r"S:\mbrown\Madi_sentinel_2_comp")
+
+years = list(range(2017, 2024))
+
+date_windows = [
+    {"name": "aug", "start_mmdd": "08-01", "end_mmdd": "08-31"},
+]
+
+output_vars = ["CCI", "NIR", "GRN", "SW1"]
 
