@@ -21,7 +21,7 @@ conda env create -f force_mo_environment.yml
 conda activate force_mo_environment
 ```
 ##  2 Composite images
-Go to Script 1, this will alow you to composite desired images for for selected years,  date windows, bands/indices (EVI, NDVI, and NDMI), and tiles once the paths/paramters are set.
+Go to [Script 1](), this will alow you to composite desired images for for selected years,  date windows, bands/indices (EVI, NDVI, and NDMI), and tiles once the paths/paramters are set.
 
 ```python
 from pathlib import Path
@@ -46,7 +46,7 @@ selected_tiles: list[str] | None = None
 
 ```
 ## 3 Extract NFI data
-Go to Script 2 and download grid .gpkg from this repository  set set desired paths on local machine for NFI data, desired indices to extract, and  were you want csv containing indices to output (if you have already matched your nfi data to gpkg you can comment this part out)
+Go to [Script 2]() and download grid .gpkg from this repository  set set desired paths on local machine for NFI data, desired indices to extract, and  were you want csv containing indices to output (if you have already matched your nfi data to gpkg you can comment this part out)
 ```python
 nfi_path = Path(r"C:\Users\mabrown\Desktop\P6_admin\nfi_data\correct_NFI.shp")
 grid_path = Path(r"S:\mbrown\FORCE_TSA_processing\grid_ch.gpkg")
@@ -65,7 +65,7 @@ years = list(range(2017, 2023))
 windows = ["aug"]  # match your date_windows "name"
 ```
 ##  4 Compute resistance, recovery, and resilience 
-Go to script 3 and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:)
+Go to [Script 3]() and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:)
   <img src="images/metrics.png" alt="metric" width="500">
 </p>
 
@@ -85,7 +85,7 @@ events = [
 ]
 ```
 ## Step 5 Tree species metrics comparisons (optional)
-You now have an analysis ready csv containing the desired metrics and are now ready for analysis. In script 4, we will switch it up and compare the varying tree species metrics using R ggplot2 and conduct a [Kruskal-Wallis](http://dx.doi.org/10.1080/01621459.1952.10483441) test (95 % CI) to see if there are statistically significant different between 11 dominant species in Switzerland . Change input and output file paths to your own, then set parameters for metrics, indices, and years you want to visualize. You end up with a series of plots for each metric (see below). 
+You now have an analysis ready csv containing the desired metrics and are now ready for analysis. In [script 4](), we will switch it up and compare the varying tree species metrics using R ggplot2 and conduct a [Kruskal-Wallis](http://dx.doi.org/10.1080/01621459.1952.10483441) test (95 % CI) to see if there are statistically significant different between 11 dominant species in Switzerland . Change input and output file paths to your own, then set parameters for metrics, indices, and years you want to visualize. You end up with a series of plots for each metric (see below). 
 <p align="center">
   <img src="images/plot.png" alt="plot" width="400">
 </p>
