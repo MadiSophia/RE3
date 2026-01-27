@@ -14,14 +14,14 @@ Python and all required libraries are installed via the conda environment.
 
 ---
 
-## Step 1 Create the conda environment
+##  1 Create the conda environment
 From the repository root, create the environment using the provided yml file:
 
 ```bash        
 conda env create -f force_mo_environment.yml
 conda activate force_mo_environment
 ```
-## Step 2 Composite images
+##  2 Composite images
 Go to Script 1, this will alow you to composite desired images for for selected years,  date windows, bands/indices (EVI, NDVI, and NDMI), and tiles once the paths/paramters are set.
 
 ```python
@@ -46,7 +46,7 @@ output_vars = ["CCI", "NIR", "GRN", "SW1"]
 selected_tiles: list[str] | None = None
 
 ```
-## Step 3 Extract NFI data
+## 3 Extract NFI data
 Go to Script 2 and download grid .gpkg from this repository  set set desired paths on local machine for NFI data, desired indices to extract, and  were you want csv containing indices to output (if you have already matched your nfi data to gpkg you can comment this part out)
 ```python
 nfi_path = Path(r"C:\Users\mabrown\Desktop\P6_admin\nfi_data\correct_NFI.shp")
@@ -65,7 +65,7 @@ products = ["CCI", "NIR", "GRN", "SW1", "NDVI", "EVI"]
 years = list(range(2017, 2023))
 windows = ["aug"]  # match your date_windows "name"
 ```
-## Step 4 Compute resistance, recovery, and resilience 
+##  4 Compute resistance, recovery, and resilience 
 Go to script 3 and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:)
   <img src="images/metrics.png" alt="metric" width="500">
 </p>
