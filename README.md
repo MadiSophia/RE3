@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/RE3.png" alt="Project banner" width="300">
+  <img src="images/RE3.png" alt="Project banner" width="400">
 </p>
 
 # RE3: Resistance, Recovery, and Resilience Pipeline
