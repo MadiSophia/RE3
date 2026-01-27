@@ -66,7 +66,11 @@ years = list(range(2017, 2023))
 windows = ["aug"]  # match your date_windows "name"
 ```
 ## Step 4 Compute resistance, recovery, and resilience 
-Go to script 3 and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:) These are based on [Ingrisch & Bahn (2018)](https://doi.org/10.1016/j.tree.2018.01.013) and [Lloret et al. (2011)](https://doi.org/10.1111/j.1600-0706.2011.19372.x). Now you are ready for analysis 
+Go to script 3 and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:) These are based on [Ingrisch & Bahn (2018)](https://doi.org/10.1016/j.tree.2018.01.013) and [Lloret et al. (2011)](https://doi.org/10.1111/j.1600-0706.2011.19372.x). Now you are ready for analysis.
+<p align="center">
+  <img src="images/metrics.png" alt="metric" width="350">
+</p>
+
 ```python
 # 1) Input and output
 in_csv = r"S:\mbrown\Madi_sentinel_2_comp\nfi_raster_FORCE.csv"
@@ -84,6 +88,9 @@ events = [
 ```
 ## Step 5 Tree species metrics comparisons (optional)
 You now have an analysis ready csv containing the desired metrics and are now ready for analysis. In script 4, we will switch it up and compare the varying tree species metrics using R ggplot2 and conduct a [Kruskal-Wallis](http://dx.doi.org/10.1080/01621459.1952.10483441) test to see if there are statistically significant different between 11 dominant species in Switzerland . Change input and output file paths to your own, then set parameters for metrics, indices, and years you want to visualize. You end up with a series of plots for each metric (see below). 
+<p align="center">
+  <img src="images/plot.png" alt="plot" width="350">
+</p>
 ```R
 # Uncomment only if you need to install packages
 # install.packages(c("dplyr","tidyr","ggplot2","forcats","rstatix","multcompView"))
