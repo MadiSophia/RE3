@@ -68,7 +68,7 @@ windows = ["aug"]  # match your date_windows "name"
 ## Step 4 Compute resistance, recovery, and resilience 
 Go to script 3 and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:) These are based on [Ingrisch & Bahn (2018)](https://doi.org/10.1016/j.tree.2018.01.013) and [Lloret et al. (2011)](https://doi.org/10.1111/j.1600-0706.2011.19372.x). Now you are ready for analysis.
 <p align="center">
-  <img src="images/metrics.png" alt="metric" width="350">
+  <img src="images/metrics.png" alt="metric" width="500">
 </p>
 
 ```python
