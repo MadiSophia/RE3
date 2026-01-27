@@ -65,7 +65,23 @@ products = ["CCI", "NIR", "GRN", "SW1", "NDVI", "EVI"]
 years = list(range(2017, 2023))
 windows = ["aug"]  # match your date_windows "name"
 ```
-## Step 4 Compute resilience, recovery, and resistance
+## Step 4 Compute resistance, recovery, and resilience 
+Go to script 3 and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:)
+```python
+# 1) Input and output
+in_csv = r"S:\mbrown\Madi_sentinel_2_comp\nfi_raster_FORCE.csv"
+out_csv = r"S:\mbrown\Madi_sentinel_2_comp\nfi_indices_metrics_clean.csv"
+
+# 2) Replace nodata with NaN
+nodata_values = [-9999, -9999.0]
+
+# 3) Disturbance setup: (pre_year, event_year, recovery_year) 
+#My drought was in 2018 for this example 
+# If a needed year column does not exist, the metric becomes NaN
+events = [
+    (2017, 2018, 2021),
+]
+```
 ## Step 5 Nice graph outputs/ modeling step
 
 
