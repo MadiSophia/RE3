@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="image/banner.png" alt="Project banner" width="900">
+</p>
+
 # FORM resilience, recovery and resistance pipeline
 
 This repository contains a flexible  Python-based workflow to generate mosaiced FORCE time series products for Switzerland (from local FORCE products locally downloaded for the FORM group at ETHZ) and compute forest resilience, recovery, and resistance metrics using Swiss NFI data (or any point data locations). 
