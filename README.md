@@ -2,7 +2,7 @@
   <img src="images/RE3.png" alt="Project banner" width="500">
 </p>
 
-# RE3: Resistance, Recovery, and Resilience Pipeline
+# RE3: Resistance, Recovery, and Resilience Metric Pipeline 
 
 This repository contains a flexible  Python-based workflow to generate composited  products for Switzerland (from local FORCE Sentinel-2 in  the FORM group at ETHZ) and compute forest resistance, recovery, and resilience metrics using Swiss NFI data (or any point data locations). 
 
