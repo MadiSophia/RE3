@@ -66,7 +66,7 @@ windows = ["aug"]  # match your date_windows "name"
 ```
 ##  4 Compute resistance, recovery, and resilience 
 Go to [Script 3](3_metric_maker.py) and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:)
-  <img src="images/metrics.png" alt="metric" width="500">
+  <img src="images/metrics.png" alt="metric" width="420">
 </p>
 
 ```python
