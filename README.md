@@ -91,6 +91,7 @@ You now have an analysis ready csv containing the desired metrics and are now re
 <p align="center">
   <img src="images/plot.png" alt="plot" width="350">
 </p>
+
 ```R
 # Uncomment only if you need to install packages
 # install.packages(c("dplyr","tidyr","ggplot2","forcats","rstatix","multcompView"))
