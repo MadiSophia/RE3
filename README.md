@@ -21,8 +21,8 @@ From the repository root, create the environment using the provided yml file:
 conda env create -f force_mo_environment.yml
 conda activate force_mo_environment
 ```
-## Step 2 Mosaicing images
-Go to Script 1, this will alow you to mosaic desired images for for selected years, date windows, and bands/indices (EVI, NDVI, and NDMI) once the paths are set.
+## Step 2 Coposite images
+Go to Script 1, this will alow you to composite desired images for for selected years,  date windows, bands/indices (EVI, NDVI, and NDMI), and tiles once the paths/paramters are set.
 
 ```python
 from pathlib import Path
@@ -65,7 +65,7 @@ products = ["CCI", "NIR", "GRN", "SW1", "NDVI", "EVI"]
 years = list(range(2017, 2023))
 windows = ["aug"]  # match your date_windows "name"
 ```
-## Step 4 Calculate indices for resilience, recovery, and resistance
+## Step 4 Compute resilience, recovery, and resistance
 ## Step 5 Nice graph outputs/ modeling step
 
 
