@@ -83,6 +83,44 @@ events = [
 ]
 ```
 ## Step 5 Tree species metrics comparisons (optional)
-Yay! You now should have an output csv contain your desired metrics. In script 5,  we will switch it up and compare the varying tree species metrics c using R ggplot2 and conduct a [Kruskal-Wallis]() test to see if there are statistically significant different between the species. Select input and output files, and data you want to visualize. You end up with comparison like the one below.   
+Yay! You now should have an output csv contain your desired metrics. In script 5,  we will switch it up and compare the varying tree species metrics c using R ggplot2 and conduct a [Kruskal-Wallis](http://dx.doi.org/10.1080/01621459.1952.10483441) test to see if there are statistically significant different between the species. Select input and output files, and data you want to visualize. You end up with comparison like the one below.   
+```R
+# Uncomment only if you need to install packages
+# install.packages(c("dplyr","tidyr","ggplot2","forcats","rstatix","multcompView"))
 
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(forcats)
+library(rstatix)
+library(multcompView)
+
+rm(list = ls())
+
+# =========================
+# User settings
+# =========================
+metric_data <- "S:/mbrown/Madi_sentinel_2_comp/nfi_indices_metrics_clean.csv"
+
+# Base output folder (all subfolders will be created inside this)
+out_dir <- "S:/mbrown/Madi_sentinel_2_comp/metric_plots"
+dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
+
+
+#11 most dominant species 
+species_order <- c(
+  "Abies alba","Larix decidua", "Picea abies", "Pinus cembra",
+  "Pinus sylvestris","Acer pseudoplatanus", "Betula pendula",
+  "Castanea sativa","Fagus sylvatica", "Fraxinus excelsior", "Quercus petraea"
+)
+
+# Set any of these to NULL to run everything available
+indices_to_run <- c(NULL)  # or NULL
+metrics_to_run <- c(NULL)             # Rs Rc Rr Pe, or NULL
+years_to_run   <- c(2018)                   # or NULL
+
+plot_width_in  <- 10
+plot_height_in <- 6.5
+plot_dpi       <- 300
+```
 
