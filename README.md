@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="images/logo.png" alt="Project banner" width="300">
+  <img src="images/RE3.png" alt="Project banner" width="300">
 </p>
 
-# FORM resilience, recovery and resistance pipeline
+# RE3: Resistance, Recovery, and Resilience Pipeline
 
-This repository contains a flexible  Python-based workflow to generate mosaiced FORCE time series products for Switzerland (from local FORCE Sentinel-2 in  the FORM group at ETHZ) and compute forest resilience, recovery, and resistance metrics using Swiss NFI data (or any point data locations). 
+This repository contains a flexible  Python-based workflow to generate composited  products for Switzerland (from local FORCE Sentinel-2 in  the FORM group at ETHZ) and compute forest resistance, recovery, and resilience metrics using Swiss NFI data (or any point data locations). 
 
 ## Requirements
 - Anaconda or Miniconda
