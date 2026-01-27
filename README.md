@@ -144,7 +144,7 @@ plot_dpi       <- 300
 - Lloret et al. (2011). *Oikos*. https://doi.org/10.1111/j.1600-0706.2011.19372.x  
 - Senf et al. (2021). *Global Ecology and Biogeography*. https://doi.org/10.1111/geb.13406    
 - Sturm et al. (2022). *Global Change Biology*. https://doi.org/10.1111/gcb.16136
-- Sturm et al. (2025). *Agricultural and Forest Meteorology*.https://doi.org/10.1111/gcb.16136](https://doi.org/10.1016/j.agrformet.2025.110756
+- Sturm et al. (2025). *Agricultural and Forest Meteorology*.https://doi.org/10.1016/j.agrformet.2025.110756
 - Trotto et al. (2025). *Ecological Indicators*. https://doi.org/10.1016/j.ecolind.2025.114382
 
 
