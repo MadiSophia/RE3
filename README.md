@@ -4,8 +4,7 @@
 
 # RE3: Resistance, Recovery, and Resilience Metric Pipeline 
 
-This repository contains a flexible  Python-based workflow to generate composited  products for Switzerland (from local FORCE Sentinel-2 in  the FORM group at ETHZ) and compute forest resistance, recovery, and resilience metrics using Swiss NFI data (or any point data locations). The original data comes from 
-- [Koch et al. (2024)](https://www.envidat.ch/#/metadata/sentinel-2-time-series-of-switzerland)
+This repository contains a flexible  Python-based workflow to generate composited  products for Switzerland (from local FORCE Sentinel-2 in  the FORM group at ETHZ) and compute forest resistance, recovery, and resilience metrics using Swiss NFI data (or any point data locations). The original data comes from [Koch et al. (2024)](https://www.envidat.ch/#/metadata/sentinel-2-time-series-of-switzerland).
 
 ## Requirements
 - Anaconda or Miniconda
