@@ -46,7 +46,7 @@ selected_tiles: list[str] | None = None
 
 ```
 ## 3 Extract NFI data
-Go to [Script 2]() and download grid .gpkg from this repository  set set desired paths on local machine for NFI data, desired indices to extract, and  were you want csv containing indices to output (if you have already matched your nfi data to gpkg you can comment this part out)
+Go to [Script 2](2_NFI_extract.py) and download grid .gpkg from this repository  set set desired paths on local machine for NFI data, desired indices to extract, and  were you want csv containing indices to output (if you have already matched your nfi data to gpkg you can comment this part out)
 ```python
 nfi_path = Path(r"C:\Users\mabrown\Desktop\P6_admin\nfi_data\correct_NFI.shp")
 grid_path = Path(r"S:\mbrown\FORCE_TSA_processing\grid_ch.gpkg")
