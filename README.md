@@ -21,7 +21,7 @@ conda env create -f force_mo_environment.yml
 conda activate force_mo_environment
 ```
 ##  2 Composite images
-Go to [Script 1](), this will alow you to composite desired images for for selected years,  date windows, bands/indices (EVI, NDVI, and NDMI), and tiles once the paths/paramters are set.
+Go to [Script 1](1_FORCE_data_mosaic.py), this will alow you to composite desired images for for selected years,  date windows, bands/indices (EVI, NDVI, and NDMI), and tiles once the paths/paramters are set.
 
 ```python
 from pathlib import Path
