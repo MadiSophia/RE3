@@ -21,7 +21,7 @@ From the repository root, create the environment using the provided yml file:
 conda env create -f force_mo_environment.yml
 conda activate force_mo_environment
 ```
-## Step 2 Coposite images
+## Step 2 Composite images
 Go to Script 1, this will alow you to composite desired images for for selected years,  date windows, bands/indices (EVI, NDVI, and NDMI), and tiles once the paths/paramters are set.
 
 ```python
