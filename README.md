@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo.png" alt="Project banner" width="900">
+  <img src="images/logo.png" alt="Project banner" width="600">
 </p>
 
 # FORM resilience, recovery and resistance pipeline
