@@ -15,7 +15,7 @@ from rasterio.errors import RasterioIOError
 in_root = Path(r"M:\FORCE_Sentinel_2_TSA_2017_2023\level3\tsa\real_values_flagged")
 out_root = Path(r"S:\mbrown\Madi_sentinel_2_comp")
 
-years = list(range(2017, 2024))
+years = list(range(2017, 2023))
 
 date_windows = [
     {"name": "aug", "start_mmdd": "08-01", "end_mmdd": "08-31"},
@@ -30,6 +30,13 @@ target_block = 256
 
 open_retries = 3
 retry_sleep_seconds = 2.0
+
+# ----------------------------
+# Tile selection find gpkg in repository so you can better identify tile locations
+# ----------------------------
+# Set to None to process all tiles
+# Or provide a list like ["X1234_Y5678", "X2345_Y6789"]
+selected_tiles: list[str] | None = None
 
 # ----------------------------
 # Logging
@@ -79,6 +86,9 @@ def output_is_valid(fp: Path) -> bool:
 
 def iter_tile_dirs(root: Path) -> list[Path]:
     tiles = [p for p in root.iterdir() if p.is_dir() and tile_pat.match(p.name)]
+    if selected_tiles is not None:
+        sel = {t.upper() for t in selected_tiles}
+        tiles = [p for p in tiles if p.name.upper() in sel]
     tiles.sort(key=lambda p: p.name)
     return tiles
 
@@ -163,7 +173,7 @@ def safe_unlink(fp):
     except Exception:
         pass
 
-def _blk(v): 
+def _blk(v):
     return max(16, (min(target_block, v) // 16) * 16)
 
 def write_atomic(fp, src, arr):
@@ -251,11 +261,17 @@ def main():
                 if not sn or not sr:
                     continue
 
-                common = set(window_dates(band_date_map(sn), y, s, e)) & set(window_dates(band_date_map(sr), y, s, e))
+                common = set(window_dates(band_date_map(sn), y, s, e)) & set(
+                    window_dates(band_date_map(sr), y, s, e)
+                )
                 if common:
-                    arr = median([safe_index(read_band(sn, band_date_map(sn)[d]) - read_band(sr, band_date_map(sr)[d]),
-                                              read_band(sn, band_date_map(sn)[d]) + read_band(sr, band_date_map(sr)[d]))
-                                  for d in sorted(common)])
+                    arr = median([
+                        safe_index(
+                            read_band(sn, band_date_map(sn)[d]) - read_band(sr, band_date_map(sr)[d]),
+                            read_band(sn, band_date_map(sn)[d]) + read_band(sr, band_date_map(sr)[d]),
+                        )
+                        for d in sorted(common)
+                    ])
                     write_atomic(out_fp, sn, arr)
 
                 sn.close()

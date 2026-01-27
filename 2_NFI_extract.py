@@ -21,10 +21,10 @@ comp_root = Path(r"S:\mbrown\Madi_sentinel_2_comp")
 out_csv = comp_root / "nfi_raster_FORCE.csv"
 
 # Which products to extract (must match folder names under comp_root)
-products = ["CCI", "NIR", "GRN", "SW1", "NDVI"]
+products = ["CCI", "NIR", "GRN", "SW1", "NDVI", "EVI"]
 
 # Which years/windows to extract
-years = list(range(2017, 2024))
+years = list(range(2017, 2023))
 windows = ["aug"]  # match your date_windows "name"
 
 # Nodata handling
