@@ -86,7 +86,7 @@ events = [
 ]
 ```
 ## Step 5 Tree species metrics comparisons (optional)
-You now have an analysis ready csv containing the desired metrics and are now ready for analysis. In script 4, we will switch it up and compare the varying tree species metrics using R ggplot2 and conduct a [Kruskal-Wallis](http://dx.doi.org/10.1080/01621459.1952.10483441) test to see if there are statistically significant different between 11 dominant species in Switzerland . Change input and output file paths to your own, then set parameters for metrics, indices, and years you want to visualize. You end up with a series of plots for each metric (see below). 
+You now have an analysis ready csv containing the desired metrics and are now ready for analysis. In script 4, we will switch it up and compare the varying tree species metrics using R ggplot2 and conduct a [Kruskal-Wallis](http://dx.doi.org/10.1080/01621459.1952.10483441) test (95 % CI) to see if there are statistically significant different between 11 dominant species in Switzerland . Change input and output file paths to your own, then set parameters for metrics, indices, and years you want to visualize. You end up with a series of plots for each metric (see below). 
 <p align="center">
   <img src="images/plot.png" alt="plot" width="400">
 </p>
