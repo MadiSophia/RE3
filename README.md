@@ -4,7 +4,8 @@
 
 # RE3: Resistance, Recovery, and Resilience Metric Pipeline 
 
-This repository contains a flexible  Python-based workflow to generate composited  products for Switzerland (from local FORCE Sentinel-2 in  the FORM group at ETHZ) and compute forest resistance, recovery, and resilience metrics using Swiss NFI data (or any point data locations). 
+This repository contains a flexible  Python-based workflow to generate composited  products for Switzerland (from local FORCE Sentinel-2 in  the FORM group at ETHZ) and compute forest resistance, recovery, and resilience metrics using Swiss NFI data (or any point data locations). The original data comes from 
+- [Koch et al. (2024)](https://www.envidat.ch/#/metadata/sentinel-2-time-series-of-switzerland)
 
 ## Requirements
 - Anaconda or Miniconda
@@ -66,7 +67,7 @@ years = list(range(2017, 2023))
 windows = ["aug"]  # match your date_windows "name"
 ```
 ## Step 4 Compute resistance, recovery, and resilience 
-Go to script 3 and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:)
+Go to script 3 and set desired paths to location of csv from previous step, set disturbances years and calculate metrics of compute resistance, recovery, and resilience. Yay! Now you are ready for further analysis:) These are based on [Ingrisch & Bahn (2018)](https://doi.org/10.1016/j.tree.2018.01.013) and [Lloret et al. (2011)](https://doi.org/10.1111/j.1600-0706.2011.19372.x). 
 ```python
 # 1) Input and output
 in_csv = r"S:\mbrown\Madi_sentinel_2_comp\nfi_raster_FORCE.csv"
@@ -82,6 +83,7 @@ events = [
     (2017, 2018, 2021),
 ]
 ```
-## Step 5 Nice graph outputs/ modeling step
+## Step 5 Tree species metrics comparisons 
+Nice work! You now should have an output csv contain your desired metrics. Now we will switch it up and compare the varying tree species metric comparison using R ggplot2 and conduct a kruskal wallis test to see if there are statistically significant different between the species.  
 
 
