@@ -129,7 +129,8 @@ plot_width_in  <- 10
 plot_height_in <- 6.5
 plot_dpi       <- 300
 ```
-
+## Step 6 Identifying drivers of resilience, resistance, and recovery  (optional)
+I already calculated several climatic and environmental and climating drives for the selected NFI points. In this module we will see how they relate to the various metrics 
 
 ## References
 
