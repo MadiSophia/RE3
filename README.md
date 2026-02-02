@@ -129,9 +129,8 @@ plot_width_in  <- 10
 plot_height_in <- 6.5
 plot_dpi       <- 300
 ```
-## Step 6 Identifying drivers of resilience, resistance, and recovery  (optional)
-I already calculated several climatic and environmental and climating drives for the selected NFI points. In this module we will see how they relate to the various metrics using Generalized linear models.
-
+## Step 5 Environmental variable selection (optional)
+I already calculated environmental variables for the selected NFI points. In this module we check the colinearity of them for model selection.
 ## References
 
 - Bloom et al. (2025). *Ecological Indicators*. https://doi.org/10.1016/j.ecolind.2025.113757  
