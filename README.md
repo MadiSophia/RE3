@@ -137,6 +137,8 @@ I already calculated environmental variables for the selected NFI points. In thi
 </p>
 
 ## 7 Building GLMs (optional)
+I will now build Generalized linear models for each species and spectral index. While combine highly correlated climate and soil variables into combined index variables. This script additionally outputs leave-one out model importances based on change RMSE % and output visualizations for each model (species and metric). (See 
+[script 5](5_variable_correlations.R))
 
 ## References
 
