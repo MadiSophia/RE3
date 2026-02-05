@@ -130,7 +130,13 @@ plot_height_in <- 6.5
 plot_dpi       <- 300
 ```
 ## Step 5 Environmental variable selection (optional)
-I already calculated environmental variables for the selected NFI points. In this module we check the colinearity of them for model selection.
+I already calculated environmental variables for the selected NFI points. In this module we check the colinearity of them for model selection and output into visual table 
+[script 5](4_metric_visualizer_species.R)
+<p align="center">
+  <img src="images/colinear.png" alt="plot" width="400">
+</p>
+
+
 ## References
 
 - Bloom et al. (2025). *Ecological Indicators*. https://doi.org/10.1016/j.ecolind.2025.113757  
