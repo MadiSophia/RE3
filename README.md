@@ -133,7 +133,7 @@ plot_dpi       <- 300
 I already calculated environmental variables for the selected NFI points. In this module we check the colinearity of them for later selection for GLM model. (See 
 [script 5](5_variable_correlations.R))
 <p align="center">
-  <img src="images/corr_env_only_no_spectral.png" alt="plot" width="600">
+  <img src="images/corr_env_only_no_spectral.png" alt="plot" width="450">
 </p>
 
 ## 7 Building GLMs (optional)
