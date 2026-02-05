@@ -84,7 +84,7 @@ events = [
     (2017, 2018, 2021),
 ]
 ```
-## Step 5 Tree species metrics comparisons (optional)
+## 5 Tree species metrics comparisons (optional)
 You now have an analysis ready csv containing the desired metrics and are now ready for analysis. In [script 4](4_metric_visualizer_species.R), we will switch it up and compare the varying tree species metrics using R ggplot2 and conduct a [Kruskal-Wallis](http://dx.doi.org/10.1080/01621459.1952.10483441) test (95 % CI) to see if there are statistically significant different between 11 dominant species in Switzerland . Change input and output file paths to your own, then set parameters for metrics, indices, and years you want to visualize. You end up with a series of plots for each metric (see below). 
 <p align="center">
   <img src="images/plot.png" alt="plot" width="400">
@@ -129,13 +129,14 @@ plot_width_in  <- 10
 plot_height_in <- 6.5
 plot_dpi       <- 300
 ```
-## Step 5 Environmental variable selection (optional)
+## 6 Environmental variable selection (optional)
 I already calculated environmental variables for the selected NFI points. In this module we check the colinearity of them for later selection for GLM model. (See 
 [script 5](5_variable_correlations.R))
 <p align="center">
-  <img src="images/corr_env_only_no_spectral.png" alt="plot" width="400">
+  <img src="images/corr_env_only_no_spectral.png" alt="plot" width="600">
 </p>
 
+## 7 Building GLMs (optional)
 
 ## References
 
